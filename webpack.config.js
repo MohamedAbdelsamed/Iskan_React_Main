@@ -1,6 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
+const webpack = require('webpack');
+const dotenv = require('dotenv');
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+const CompressionPlugin = require('compression-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: './src/index.js',
@@ -49,10 +54,10 @@ module.exports = {
   name: "host_app",
   filename: "remoteEntry.js", // 🔥 Add this line to serve /remoteEntry.js
   remotes: {
-    microfrontend1: "microfrontend1@http://localhost:3001/remoteEntry.js",
-    microfrontend2: "microfrontend2@http://localhost:3002/remoteEntry.js",
-    microfrontend3: "microfrontend3@http://localhost:3003/remoteEntry.js",
-    microfrontend4: "microfrontend4@http://localhost:3004/remoteEntry.js",
+    microfrontend1: `microfrontend1@${process.env.REACT_APP_REMOTE_URL1}`,
+    microfrontend2: `microfrontend2@${process.env.REACT_APP_REMOTE_URL2}`,
+    microfrontend3: `microfrontend3@${process.env.REACT_APP_REMOTE_URL3}`,
+    microfrontend4: `microfrontend4@${process.env.REACT_APP_REMOTE_URL4}`,
   },
   exposes: {
     './i18n': './src/i18',
@@ -64,10 +69,16 @@ module.exports = {
     i18next: { singleton: true, requiredVersion: '^23.0.0' },
   }
 }),
-
-
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
+
+    new webpack.DefinePlugin({
+    'process.env.REACT_APP_ENV': JSON.stringify(process.env.REACT_APP_ENV),
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+  }),
+  new CompressionPlugin(),
+  new BundleAnalyzerPlugin()
+
   ],
 };

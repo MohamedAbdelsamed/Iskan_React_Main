@@ -15,6 +15,7 @@ const MicroFrontend3 = React.lazy(() => import('microfrontend3/SecondChild'));
 const MicroFrontend4 = React.lazy(() => import('microfrontend4/Employee'));
 
 const AppRoutes = () => {
+  console.log("process.env",process.env.REACT_APP_ENV)
   const { message } = useData();
 const location = useLocation();
 
