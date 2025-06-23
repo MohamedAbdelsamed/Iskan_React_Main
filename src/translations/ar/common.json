@@ -1,0 +1,45 @@
+{
+    "email":"البريد الالكترونى",
+    "password":"كلمة المرور",
+    "currency":"رصيد",
+    "arabic": "العربية",
+    "english": "الانجليزية",
+    "welcome-to-parent":"مرحبا بك فى التطبيق الرئيسي",
+    "MBRH-footer":"جميع الحقوق محفوظة محمد بن راشد للاسكان",
+    "welcome":"مرحبا",
+    "name":"الاسم",
+    "role":"الوظيفة",
+    "transfer-parent-child":"نقل الداتا من parent الى  child",
+    "field_required":"هذا الحقل مطلوب",
+    "send":"إرسال",
+    "Home":"الرئيسية",
+    "login":"تسجيل الدخول",
+    "invalid_mail":"صيغه البريد الالكترونى غير صحيحة",
+    "invalid_password":"كلمة المرور لا تقل عن 10 ارقام",
+    "customer_service":"خدمة المتعاملين",
+    "Processing_Requests":"معالجة الطلبات",
+    "Engineering_Department":"القسم الهندسي",
+    "Finance_Department":"القسم المالى",
+    "Admin":"الادمن",
+    "logout":"الخروج",
+    "Admin_Panel":"لوحة التحكم",
+    "No_of_records":"عدد السجلات",
+    "Tasks_Completed_Today":"المهام المنجزة اليوم",
+    "Pending_tasks":"المهام المعلقة",
+    "Delayed_Requests":"الطلبات المتاخرة",
+    "Records":"السجلات",
+    "firstName":"الاسم الاول",
+    "lastName":"الاسم الاخير",
+    "Age": "العمر",
+    "Role":"الوظيفة",
+    "ID":"الرقم",
+    "AdminPage":{
+        "Admin_title":"المستخدمين",
+        "add":"إضافة",
+        "add_successfuly":"تم الاضافة بنجاح"
+    },
+    "EngineeringDepartment":{
+        "Search":"بحث"
+    }
+   
+}
