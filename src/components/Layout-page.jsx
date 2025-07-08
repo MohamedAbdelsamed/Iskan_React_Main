@@ -27,7 +27,8 @@ const Layout = () => {
                   <MenuItem active={location.pathname === '/Processing_Requests'} component={<Link to="/Processing_Requests" />}>{t('Processing_Requests')}</MenuItem> 
                   <MenuItem active={location.pathname === '/Engineering_Department'} component={<Link to="/Engineering_Department" />}>{t('Engineering_Department')}</MenuItem>
                   <MenuItem active={location.pathname === '/Finance_Department'} component={<Link to="/Finance_Department" />}>{t('Finance_Department')}</MenuItem>
-                   <MenuItem active={location.pathname === '/Admin'} component={<Link to="/Admin" />}>{t('Admin')}</MenuItem>
+                  <MenuItem active={location.pathname === '/Admin'} component={<Link to="/Admin" />}>{t('Admin')}</MenuItem>
+                <MenuItem active={location.pathname === '/permissions'} component={<Link to="/permissions" />}>{t('permissions')}</MenuItem>
                 </Menu>
               </Sidebar>
           </Col>

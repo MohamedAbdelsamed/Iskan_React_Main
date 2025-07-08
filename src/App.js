@@ -5,6 +5,7 @@ import './App.css';
 import LoginPage from './components/Login.jsx';
 import Layout from './components/Layout-page.jsx';
 import Home from './components/Home.jsx';
+import TreeReact from './components/TreeReact.jsx';
 
 import { DataProvider, useData } from './components/DataContext.js';
 
@@ -56,6 +57,10 @@ const location = useLocation();
               <MicroFrontend4 />
             </Suspense>
           }
+        />
+          <Route
+          path="permissions"
+          element={ <TreeReact />}
         />
       </Route>
     </Routes>

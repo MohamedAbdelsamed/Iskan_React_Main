@@ -33,6 +33,70 @@
     "Age": "العمر",
     "Role":"الوظيفة",
     "ID":"الرقم",
+    "Print":"طباعه",
+    "Export_Excel":"تصدير اكسيل",
+    "No-Data":"لا توجد بيانات",
+    "No-Result":"لا توجد نتائج",
+    "Went_Wrong":"حدث خطا",
+    "Columns_menu":"قائمة الاعمدة",
+    "Columns_show":"إظهار الأعمدة",
+    "filter":"تصفية",
+    "Hide_Column":"اخفاء الاعمده",
+    "unsort_column":"الغاء الترتيب",
+    "sortAsc":"ترتيب تصاعدى",
+    "sortDesc":"ترتيب تنازلى",
+    "Density":"كثافة",
+    "Compact":"ضيق",
+    "Standard":"عادى",
+    "Comfortable":"مريح",
+     "grid": {
+    "noRowsLabel": "لا بيانات",
+    "noResultsOverlayLabel": "لا نتائج",
+    "errorOverlayDefaultLabel": "خطأ",
+    "columnMenuLabel": "القائمة",
+    "columnMenuShowColumns": "إظهار",
+    "columnMenuFilter": "تصفية",
+    "columnMenuHideColumn": "إخفاء",
+    "columnMenuUnsort": "إلغاء الترتيب",
+    "columnMenuSortAsc": "تصاعدي",
+    "columnMenuSortDesc": "تنازلي",
+    "toolbarDensity": "الكثافة",
+    "toolbarDensityLabel": "الكثافة",
+    "toolbarDensityCompact": "ضيق",
+    "toolbarDensityStandard": "عادي",
+    "toolbarDensityComfortable": "مريح",
+    "toolbarColumns": "أعمدة",
+    "toolbarColumnsLabel": "تحديد الأعمدة",
+    "toolbarFilters": "فلاتر",
+    "toolbarFiltersLabel": "عرض الفلاتر",
+    "toolbarFiltersTooltipHide": "إخفاء",
+    "toolbarFiltersTooltipShow": "عرض",
+    "toolbarExport": "تصدير",
+    "toolbarExportLabel": "تصدير",
+    "toolbarExportCSV": "CSV",
+    "toolbarExportPrint": "طباعة",
+    "footerTotalRows": "الكل:",
+    "MuiTablePagination": {
+      "labelRowsPerPage": "لكل صفحة:",
+      "firstIconButtonText": "الأولى",
+      "previousIconButtonText": "السابق",
+      "nextIconButtonText": "التالي",
+      "lastIconButtonText": "الأخيرة"
+    },
+     "columnsPanelTextFieldLabel": "ابحث عن عمود",
+    "columnsPanelTextFieldPlaceholder": "عنوان العمود",
+    "columnsPanelDragIconLabel": "ترتيب الأعمدة",
+    "columnsPanelShowAllButton": "عرض الكل",
+    "columnsPanelHideAllButton": "إخفاء الكل",
+
+    "filterPanelAddFilter": "إضافة فلتر",
+    "filterPanelDeleteIconLabel": "حذف",
+  
+    "filterPanelColumns": "العمود",
+    "filterPanelInputLabel": "القيمة",
+    "filterPanelOperator": "المشغل",
+    "filterPanelInputPlaceholder": "أدخل قيمة التصفية"
+},
     "AdminPage":{
         "Admin_title":"المستخدمين",
         "add":"إضافة",
@@ -40,6 +104,15 @@
     },
     "EngineeringDepartment":{
         "Search":"بحث"
-    }
-   
+    },
+      "filterPanelOperators": {
+      "contains": "يحتوي",
+      "equals": "يساوي",
+      "startsWith": "يبدأ بـ",
+      "endsWith": "ينتهي بـ",
+      "isEmpty": "فارغ",
+      "isNotEmpty": "غير فارغ",
+      "isAnyOf": "أحد القيم"
+    },
+   "permissions":"الصلاحيات"
 }

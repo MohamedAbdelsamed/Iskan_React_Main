@@ -35,7 +35,57 @@
     "lastName":"last name",
     "Age": "Age",
     "Role":"Role",
+    "Export_Excel":"Export Excel",
+    "Print":"Print",   
     "ID":"Id",
+      "grid": {
+    "noRowsLabel": "No rows",
+    "noResultsOverlayLabel": "No results",
+    "errorOverlayDefaultLabel": "An error occurred",
+    "columnMenuLabel": "Menu",
+    "columnMenuShowColumns": "Show columns",
+    "columnMenuFilter": "Filter",
+    "columnMenuHideColumn": "Hide column",
+    "columnMenuUnsort": "Unsort",
+    "columnMenuSortAsc": "Sort ASC",
+    "columnMenuSortDesc": "Sort DESC",
+    "toolbarDensity": "Density",
+    "toolbarDensityLabel": "Density",
+    "toolbarDensityCompact": "Compact",
+    "toolbarDensityStandard": "Standard",
+    "toolbarDensityComfortable": "Comfortable",
+    "toolbarColumns": "Columns",
+    "toolbarColumnsLabel": "Select columns",
+    "toolbarFilters": "Filters",
+    "toolbarFiltersLabel": "Show filters",
+    "toolbarFiltersTooltipHide": "Hide",
+    "toolbarFiltersTooltipShow": "Show",
+    "toolbarExport": "Export",
+    "toolbarExportLabel": "Export",
+    "toolbarExportCSV": "Download as CSV",
+    "toolbarExportPrint": "Print",
+    "footerTotalRows": "Total:",
+    "MuiTablePagination": {
+      "labelRowsPerPage": "Rows per page:",
+      "firstIconButtonText": "First page",
+      "previousIconButtonText": "Previous page",
+      "nextIconButtonText": "Next page",
+      "lastIconButtonText": "Last page"
+    },
+     "columnsPanelTextFieldLabel": "Find column",
+    "columnsPanelTextFieldPlaceholder": "Column title",
+    "columnsPanelDragIconLabel": "Reorder columns",
+    "columnsPanelShowAllButton": "Show all",
+    "columnsPanelHideAllButton": "Hide all",
+
+    "filterPanelAddFilter": "Add filter",
+    "filterPanelDeleteIconLabel": "Delete",
+   
+    "filterPanelColumns": "Column",
+    "filterPanelInputLabel": "Value",
+    "filterPanelOperator": "Operator",
+    "filterPanelInputPlaceholder": "أدخل قيمة التصفية"
+  },
     "AdminPage":{
         "Admin_title":"Users",
         "add":"add",
@@ -43,5 +93,15 @@
     },
       "EngineeringDepartment":{
         "Search":"Search"
-    }
+    },
+     "filterPanelOperators": {
+      "contains": "contains",
+      "equals": "equals",
+      "startsWith": "starts with",
+      "endsWith": "ends with",
+      "isEmpty": "is empty",
+      "isNotEmpty": "is not empty",
+      "isAnyOf": "is any of"
+    },
+    "permissions":"permissions"
 }

@@ -17,20 +17,26 @@ module.exports = {
 },
 
   mode: 'development', // or 'production'
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: 'babel-loader',
+module: {
+  rules: [
+    {
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      use: 'babel-loader',
+    },
+    {
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+    },
+    {
+      test: /\.m?js$/, // ✅ Add this to fix ESM import resolution
+      resolve: {
+        fullySpecified: false,
       },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-         
-    ],
-  },
+    },
+  ],
+},
+
   resolve: {
     extensions: ['.js', '.jsx'],
   },

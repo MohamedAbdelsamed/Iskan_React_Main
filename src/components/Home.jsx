@@ -31,11 +31,9 @@ const Home = () => {
     return(
         <>
         <AdminPanel />
-
          {/* <h3>{t('welcome-to-parent')}</h3> */}
          <br /><br />
         <ReactTable />
-
 
          {/* <p>{t('transfer-parent-child')}</p> */}
          <br /><br />

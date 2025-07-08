@@ -139,3 +139,33 @@ button, input, optgroup, select, textarea{
 .color1{
     color: #d92c2c;
 }
+.css-levciy-MuiTablePagination-displayedRows {
+    direction: ltr !important;
+    margin-bottom: 0;
+}
+.css-pdct74-MuiTablePagination-selectLabel{
+    margin-bottom: 0;
+}
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar .MuiTablePagination-actions{
+    direction: ltr;
+}
+
+.btn-print,.btn-print:hover{
+    background-color: #336296 !important;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.node__root > circle {
+  fill: red;
+}
+
+.node__branch > circle {
+  fill: yellow;
+}
+
+.node__leaf > circle {
+  fill: green;
+  /* Let's also make the radius of leaf nodes larger */
+  r: 40;
+}
