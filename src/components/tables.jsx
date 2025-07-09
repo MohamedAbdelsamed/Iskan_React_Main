@@ -149,6 +149,7 @@ const handlePrint = () => {
       <head>
         <title>${t('Records')}</title>
         <style>
+        
           body {
             font-family: 'Dubai', sans-serif;
             direction: rtl;
