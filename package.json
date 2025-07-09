@@ -2,15 +2,12 @@
   "name": "micr-front-end",
   "version": "1.0.0",
   "main": "index.js",
- 
-"scripts": {
-  "start": "cross-env NODE_ENV=development webpack serve --mode development",
-  "start:production": "cross-env NODE_ENV=production webpack serve --mode production",
-  "build:production": "cross-env NODE_ENV=production webpack --mode production",
-  "analyze": "cross-env NODE_ENV=production ANALYZE=true webpack --mode production"
-},
-
-
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --mode development",
+    "start:production": "cross-env NODE_ENV=production webpack serve --mode production",
+    "build:production": "cross-env NODE_ENV=production webpack --mode production",
+    "analyze": "cross-env NODE_ENV=production ANALYZE=true webpack --mode production"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +18,7 @@
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
     "compression-webpack-plugin": "^11.1.0",
+    "copy-webpack-plugin": "^13.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
     "dotenv": "^16.5.0",

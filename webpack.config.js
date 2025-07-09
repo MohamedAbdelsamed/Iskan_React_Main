@@ -5,6 +5,7 @@ const webpack = require('webpack');
 const dotenv = require('dotenv');
 const CompressionPlugin = require('compression-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CopyPlugin = require('copy-webpack-plugin');
 
 // Load env vars from correct .env file
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
@@ -96,5 +97,11 @@ module.exports = {
     new CompressionPlugin(),
 
     ...(isAnalyze ? [new BundleAnalyzerPlugin()] : []),
+
+    new CopyPlugin({
+        patterns: [
+          { from: 'public/images', to: 'images' },
+        ],
+    }),
   ],
 };
