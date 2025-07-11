@@ -6,6 +6,7 @@ import LoginPage from './components/Login.jsx';
 import Layout from './components/Layout-page.jsx';
 import Home from './components/Home.jsx';
 import TreeReact from './components/TreeReact.jsx';
+import Admins from './components/superAdmins.jsx';
 
 import { DataProvider, useData } from './components/DataContext.js';
 
@@ -58,10 +59,12 @@ const location = useLocation();
             </Suspense>
           }
         />
-          <Route
+        <Route
           path="permissions"
           element={ <TreeReact />}
         />
+       <Route path="super-admins" element={<Admins />} />
+
       </Route>
     </Routes>
   );

@@ -59,7 +59,7 @@ module.exports = {
       },
     ],
     historyApiFallback: true,
-    port: 3000,
+    port: 3009,
     hot: true,
     open: true,
   },

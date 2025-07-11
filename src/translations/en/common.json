@@ -103,5 +103,19 @@
       "isNotEmpty": "is not empty",
       "isAnyOf": "is any of"
     },
-    "permissions":"permissions"
+    "permissions":"permissions",
+    "Admins":{
+      "Admins":"Admins",
+      "username":"Username",
+      "fullname":"Fullname",
+      "isAdmin":"isAdmin",
+      "email":"email",
+      "createdBy":"createdBy",
+      "createdOn":"createdOn",
+      "modifiedBy":"modifiedBy",
+      "modifiedOn":"modifiedOn",
+      "yes":"yes",
+      "no":"no"
+    }
+
 }

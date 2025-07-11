@@ -114,5 +114,18 @@
       "isNotEmpty": "غير فارغ",
       "isAnyOf": "أحد القيم"
     },
-   "permissions":"الصلاحيات"
+   "permissions":"الصلاحيات",
+   "Admins":{
+      "Admins":"مديرين النظام",
+      "username":"اسم المستخدم",
+      "fullname":"الاسم كامل",
+      "isAdmin":"الادمن",
+      "email":"البريد الالكترونى",
+      "createdBy":"انشاء بواسطة",
+      "createdOn":"تاريخ الانشاء",
+      "modifiedBy":"تعديل بواسطة",
+      "modifiedOn":"تاريخ التعديل",
+      "yes":"نعم",
+      "no":"لا"
+    }
 }
