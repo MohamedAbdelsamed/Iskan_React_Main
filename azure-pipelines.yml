@@ -6,10 +6,7 @@ variables:
   fullImageName: $(imageName):$(dateTime)
 
 trigger:
-  branches:
-    include:
     - main
-    - releases/*
 name: $(date:yyyyMMdd)$(rev:.r)
 
 jobs:
