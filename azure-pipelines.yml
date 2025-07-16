@@ -8,7 +8,7 @@ variables:
 trigger:
   branches:
     include:
-    - refs/heads/main
+    - main
 name: $(date:yyyyMMdd)$(rev:.r)
 
 jobs:
