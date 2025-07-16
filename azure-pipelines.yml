@@ -1,12 +1,16 @@
-# Variable 'dateTime' was defined in the Variables tab
-# Variable 'fullImageName' was defined in the Variables tab
-# Variable 'imageName' was defined in the Variables tab
-# Variable 'imageTag' was defined in the Variables tab
+# Define pipeline-level variables
+variables:
+  dateTime: $[ format('{0:yyyy}.{0:MM}.{0:dd}.{0:HH}.{0:mm}.{0:ss}',pipeline.startTime) ]
+  imageName: 'micro-front'
+  imageTag: $(dateTime)
+  fullImageName: $(imageName):$(dateTime)
+
 trigger:
   branches:
     include:
     - refs/heads/main
 name: $(date:yyyyMMdd)$(rev:.r)
+
 jobs:
 - job: Job_1
   displayName: Agent job 1
@@ -32,4 +36,3 @@ jobs:
     displayName: Publish Pipeline Artifact
     inputs:
       artifactName: imageTag
-...
