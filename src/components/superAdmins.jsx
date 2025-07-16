@@ -8,7 +8,6 @@ import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 import api from './Api';
 
-
 const Admins = () => {
   const { t } = useTranslation();
   const [rows, setRows] = useState([]);
