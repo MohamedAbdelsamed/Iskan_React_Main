@@ -1,0 +1,35 @@
+# Variable 'dateTime' was defined in the Variables tab
+# Variable 'fullImageName' was defined in the Variables tab
+# Variable 'imageName' was defined in the Variables tab
+# Variable 'imageTag' was defined in the Variables tab
+trigger:
+  branches:
+    include:
+    - refs/heads/main
+name: $(date:yyyyMMdd)$(rev:.r)
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    fetchDepth: 1
+  - task: Docker@0
+    displayName: Build an image
+    inputs:
+      azureSubscriptionEndpoint: 12c3762d-7e33-44d4-8691-81e8c684f690
+      azureContainerRegistry: '{"loginServer":"mbrh2025.azurecr.io", "id" : "/subscriptions/4941788a-1197-47e6-b4c3-6aff7ca03888/resourceGroups/MBRH-Test/providers/Microsoft.ContainerRegistry/registries/mbrh2025"}'
+      imageName: $(fullImageName)
+  - task: Docker@0
+    displayName: Push an image
+    inputs:
+      azureSubscriptionEndpoint: 12c3762d-7e33-44d4-8691-81e8c684f690
+      azureContainerRegistry: '{"loginServer":"mbrh2025.azurecr.io", "id" : "/subscriptions/4941788a-1197-47e6-b4c3-6aff7ca03888/resourceGroups/MBRH-Test/providers/Microsoft.ContainerRegistry/registries/mbrh2025"}'
+      action: Push an image
+      imageName: $(fullImageName)
+  - task: PublishPipelineArtifact@1
+    displayName: Publish Pipeline Artifact
+    inputs:
+      artifactName: imageTag
+...
