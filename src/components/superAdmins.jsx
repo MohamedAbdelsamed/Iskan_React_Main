@@ -18,7 +18,7 @@ const Admins = () => {
 
   useEffect(() => {
     api
-      .get('/v1/Iskan_API_UI_MAIN/api/v1.0/uimain/usrmgmt/user/list/all')
+      .get('Iskan_API_UI_MAIN/api/v1.0/uimain/lookup/user/list/all')
       .then((res) => {
         const dataWithId = res.data.map((item, index) => ({
           id: index + 1,
